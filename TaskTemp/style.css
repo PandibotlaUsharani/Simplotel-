@@ -1,0 +1,222 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Monomaniac+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Trispace:wght@100..800&family=Varela&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    padding: 15px;
+    width: auto;
+    background-color: rgba(241, 72, 72, 0.973);
+}
+.navbar > img{
+    margin-top: 6px;
+    height: 1.5rem;
+    width: auto;
+}
+img:hover{
+    cursor: pointer;
+}
+.items{
+    display: flex;
+    list-style: none;
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 90vw;
+    align-items: center;
+    justify-content: space-around;
+}
+.container {
+    display: flex;
+}
+
+.content {
+    width: 40%;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    background: rgb(237,226,162);
+    background: linear-gradient(90deg, rgba(237,226,162,1) 0%, rgba(236,201,174,1) 37%, rgba(237,180,180,1) 82%);
+}
+
+.heading {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 40px;
+    /* font-family: "Trispace", sans-serif; */
+    font-family: "Varela", sans-serif;
+    letter-spacing: 6px;
+}
+
+.desc {
+    margin-top: 50px;
+    width: 35rem;
+    letter-spacing: 3px;
+    font-family: 'poppins';
+}
+
+button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: rgb(240, 116, 137);
+    color: #fff;
+    border: none;
+    width: 15rem;
+    height: 3rem;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.image{
+    width: 50%;
+    max-height: 100vh;
+    overflow: hidden; 
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+.container-2{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgb(242,197,134);
+background: linear-gradient(90deg, rgba(242,197,134,1) 0%, rgba(238,209,126,1) 12%, rgba(233,187,168,1) 42%, rgba(230,157,157,1) 71%);
+}
+.inner{
+    align-self: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-1{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 65vh;
+    gap: 20px;
+    justify-content: center;
+}
+.images-1{
+    width: 100%;
+    height: auto; 
+    max-height: 100%;
+    overflow: hidden; 
+}
+.images-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.col-2{
+    width: 20%;
+    margin: 50px;
+    max-height: 100%;
+    height: 65vh;
+}
+.col-2 img{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.col-3{
+    order: 3;
+    height: 30vh;
+    max-width: 30vw;
+    display: flex;
+    padding: 2.1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    background-color: rgba(236, 72, 72, 0.815);
+}
+.col-3-footer{
+    margin-top: 50px;
+    display: flex;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    gap: 10px;
+}
+#s-header{
+    font-size: 1.2rem;
+}
+#bold-text{
+    font-size: 3.5rem;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#r-arrow{
+    width: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .items{
+        font-size: 1rem;
+    }
+    .content{
+        width: 100%;
+        max-width: 100%;
+        align-items: flex-start;
+        padding: 2px;
+    }
+    .container .container-2{
+        max-width: 100%;
+    }
+    .image{
+        display: none;
+    }
+    .heading{
+        font-size: 1.2rem;
+    }
+    .desc{
+        max-width: 100%;
+        font-size:12px;
+    }
+    .inner {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .col {
+        flex: 1 0 100%; 
+        gap:1px;
+    }
+
+    .col-1,
+    .col-2 {
+        flex: 1; 
+        min-width: 160px;
+        height:auto;
+    }
+
+    .col-3 {
+        min-width: 415px;
+        overflow: hidden;
+        object-fit: cover;
+        align-self: center;
+        margin-top: 20px;
+    }
+    #s-header{
+        font-size: 1rem;
+    }
+    #bold-text{
+        font-size: 2.2rem;
+    }
+
+
+}
